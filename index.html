@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f0f2f5;
+      color: #333;
+    }
+    header {
+      width: 100%;
+      height: 100vh;
+      background: linear-gradient(135deg, #6e8efb, #a777e3);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 5px solid white;
+      box-shadow: 0 0 30px rgba(255,255,255,0.7);
+      margin-bottom: 20px;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+    header h2 {
+      font-size: 1.5rem;
+      color: #e0e0e0;
+      margin-bottom: 20px;
+    }
+    header p {
+      color: #fff;
+      font-size: 1.2rem;
+    }
+    section {
+      padding: 80px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+      font-size: 2.2rem;
+      position: relative;
+    }
+    .section-title::after {
+      content: '';
+      width: 80px;
+      height: 4px;
+      background: #6e8efb;
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 2px;
+    }
+    .about-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 20px;
+    }
+    .about-content img {
+      width: 120px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+    .about-content p {
+      font-size: 1.1rem;
+      color: #555;
+      max-width: 800px;
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      text-align: center;
+    }
+    .skill-card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+    .skill-card:hover {
+      transform: translateY(-10px);
+    }
+    .skill-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+    .skill-card h3 {
+      font-size: 1.4rem;
+      color: #333;
+    }
+    .projects {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+    .project-card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+    .project-card:hover {
+      transform: translateY(-10px);
+    }
+    .contact-info {
+      background: #6e8efb;
+      color: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      text-align: center;
+    }
+    .contact-info p {
+      font-size: 1.2rem;
+      margin: 10px 0;
+    }
+    footer {
+      margin-top: 30px;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #888;
+    }
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      header h2 {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <img src="/6d9215b7-9759-4b08-b893-f9adf938df06.png" alt="Prit Photo">
+  <h1>Prit Madiya</h1>
+  <h2>Web Developer | Data Analyst | App Designer | Frontend Developer</h2>
+  <p>Web Designing || App Designing || Data Analysis</p>
+</header>
+
+<section id="about">
+  <h2 class="section-title">About Me</h2>
+  <div class="about-content">
+    <img src="/c7786ec4-34b8-4136-959d-05c27cf891ad (1).png" alt="About Image">
+    <p>
+      Hello! I'm Prit Madiya, a passionate web developer, app designer, and data analyst. 
+      I love building creative and functional designs that solve real-world problems. 
+      With a strong enthusiasm for technology and innovation, I constantly work on improving my skills 
+      and delivering high-quality results. Let's connect and build something amazing together!
+    </p>
+  </div>
+</section>
+
+<section id="skills">
+  <h2 class="section-title">My Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-card">
+      <img src="/20250429_134209.png" alt="Web Designing">
+      <h3>Web Designing</h3>
+    </div>
+    <div class="skill-card">
+      <img src="/pexels-divinetechygirl-1181216.jpg" alt="App Designing">
+      <h3>App Designing</h3>
+    </div>
+    <div class="skill-card">
+      <img src="/pexels-goumbik-590016.jpg" alt="Data Analysis">
+      <h3>Data Analysis</h3>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2 class="section-title">My Projects</h2>
+  <div class="projects">
+    <div class="project-card">
+      <h3>SnapSecure</h3>
+      <p>A security app concept that captures a selfie and records screen when someone tries to unlock without your fingerprint.</p>
+    </div>
+    <div class="project-card">
+      <h3>Hotel Management Website</h3>
+      <p>A fully functional website built one year ago to manage a complete hotel system with booking, services, and feedback features.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="section-title">Contact Me</h2>
+  <div class="contact-info">
+    <p><strong>Name:</strong> Prit Madiya</p>
+    <p><strong>Email:</strong> pritmaliya009@gmail.com</p>
+    <p><strong>Phone:</strong> 9274135739</p>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 Prit Madiya. All Rights Reserved.
+</footer>
+
+</body>
+  </html>
